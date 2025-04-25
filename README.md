@@ -5,6 +5,7 @@ Los codigos de ejemplo incluidos en este repositorio contienen implementaciones 
 ## Requisitos
 - python 3.8 o superior
 - Pyro5 `pip install Pyro5`
+    - [Documentacion Pyro5](https://pyro5.readthedocs.io/en/latest/index.html)
 
 ## Ejecución
 Cada carpeta contiene un readme dedicado a explicar como se ejecutan los codigos, estos deben ejecutarse en un orden especifico y siempre mantener un servidor de nombres de Pyro5 en ejecucion.
