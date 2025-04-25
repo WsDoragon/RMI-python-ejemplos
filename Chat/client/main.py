@@ -29,7 +29,7 @@ def main():
 
     # Lanzar hilo para escuchar notificaciones (mantener daemon activo)
     def loop_notificaciones():
-        #print(f"{apodo} dice > ", end="", flush=True)
+      
         daemon.requestLoop()
 
     threading.Thread(target=loop_notificaciones, daemon=True).start()
@@ -39,7 +39,7 @@ def main():
         while True:
             msg = input()
             if msg.strip().upper() == SALIR:
-                chat.envio(uri_cliente, apodo, " deja la sala de chat !!!!!")  # Pasar uri_cliente
+                print("Saliendo del chat...")
                 chat.baja(uri_cliente, apodo)  # Pasar uri_cliente
                 break
             else:
